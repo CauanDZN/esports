@@ -15,7 +15,7 @@ export function Background({ children }: Props) {
         style={styles.container}
         defaultSource={backgroundImg}
     >
-
+      {children}
     </ImageBackground>
   );
 }

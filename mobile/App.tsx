@@ -12,7 +12,7 @@ import { Background } from "./src/components/Background";
 import { Loading } from "./src/components/Loading";
 
 export default function App() {
-  const [fontsLoader] = useFonts({
+  const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_600SemiBold,
     Inter_700Bold,
@@ -26,7 +26,8 @@ export default function App() {
         translucent
       />
 
-      {fontsLoader ? <Home /> : <Loading />}
+      {fontsLoaded ? <Home /> : <Loading />}
+      
 
     </Background>
   );
